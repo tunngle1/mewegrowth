@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MeWeGo Growth — 90 секунд про то, чем мы полезны бизнесу</title>
+<meta name="description" content="Короткая страница для знакомства: пять цифр, четыре кейса и выбор ситуации. За 90 секунд понятно, чем MeWeGo Growth может быть полезен вашему бизнесу.">
+<link rel="canonical" href="https://mewego.growth/hello">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="MeWeGo Growth — 90 секунд про то, чем мы полезны бизнесу">
+<meta property="og:description" content="Мы, скорее всего, только что познакомились. За 90 секунд покажу, чем мы можем быть полезны бизнесу.">
+<meta property="og:image" content="og-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#171E22">
+<link rel="preload" href="fonts/montserrat-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='26' fill='%23171E22'/%3E%3Cpolyline points='30,80 50,80 60,55 80,55' fill='none' stroke='%23FF8830' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='30' cy='80' r='9' fill='%23FF8830'/%3E%3Ccircle cx='86' cy='55' r='11' fill='none' stroke='%23FF8830' stroke-width='8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#171E22;--canvas:#FBF5E5;--ember:#FF8830;--momentum:#FF9A50;--trail:#E38A48;
+  --mist:#D0D4C5;--calm:#AAC4BB;--stone:#6C6B58;--pink:#FF2D6F;--teal:#12B5A5;
+  --grad:linear-gradient(120deg,#FF8830,#FF2D6F);--on-light:#3A413F;
+  --t:220ms cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--canvas);font-family:Montserrat,system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.035em;line-height:1.05;text-wrap:balance}
+h1{font-size:clamp(32px,8vw,52px);letter-spacing:-.045em;line-height:1}
+h2{font-size:clamp(23px,5.4vw,34px)}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+.wrap{width:100%;max-width:640px;margin:0 auto;padding:0 20px}
+.sec{padding:clamp(40px,8vw,64px) 0}
+.sec--light{background:var(--canvas);color:var(--ink)}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--ember);margin-bottom:14px;display:block}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;padding:16px 26px;border-radius:100px;border:2px solid transparent;font-weight:700;font-size:17px;cursor:pointer;transition:transform var(--t),box-shadow var(--t),background var(--t),border-color var(--t);position:relative;overflow:hidden;text-align:center}
+.btn--primary{background:var(--ember);color:var(--ink)}
+.btn--primary::after{content:"";position:absolute;inset:0;background:var(--grad);opacity:0;transition:opacity var(--t)}
+.btn--primary>span{position:relative;z-index:1}
+.btn--primary:hover::after,.btn--primary:focus-visible::after{opacity:1}
+.btn--primary:active{transform:scale(.99)}
+.btn--ghost{border-color:rgba(208,212,197,.35);color:var(--canvas)}
+.sec--light .btn--ghost{border-color:rgba(23,30,34,.28);color:var(--ink)}
+.btn--ghost:hover,.btn--ghost:focus-visible{border-color:var(--ember)}
+:focus-visible{outline:3px solid var(--ember);outline-offset:3px;border-radius:6px}
+.logo{display:flex;align-items:center;gap:12px;padding:20px 0}
+.logo svg{width:34px;height:34px;flex:none}
+.logo__name{font-weight:800;font-size:19px;letter-spacing:-.02em}
+.logo__name b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{position:relative;overflow:hidden;padding-bottom:clamp(34px,7vw,52px)}
+.glow{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(120px);opacity:.16;background:radial-gradient(circle,#FF8830,rgba(255,45,111,.4) 50%,transparent 70%);top:-240px;right:-180px;pointer-events:none;animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(-40px,40px,0) scale(1.1)}}
+.hero p{color:var(--mist);margin-top:18px}
+.route{width:100%;height:70px;margin-top:26px;opacity:.65}
+.draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1500ms cubic-bezier(.22,.61,.36,1) 200ms forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.nums{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
+.num{background:rgba(251,245,229,.07);border:1px solid rgba(208,212,197,.18);border-radius:22px;padding:20px}
+.num:first-child{grid-column:span 2}
+.num__n{font-size:clamp(26px,7vw,38px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.num__n .u{color:var(--ember)}
+.num__t{margin-top:8px;font-size:14px;line-height:1.4;color:var(--calm)}
+.cases{display:grid;gap:12px;margin-top:26px}
+.case{background:rgba(23,30,34,.05);border-radius:22px;padding:22px;transition:transform var(--t)}
+.case:active{transform:scale(.99)}
+.case__k{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--trail)}
+.case__n{font-size:clamp(22px,5.4vw,30px);font-weight:800;letter-spacing:-.035em;margin-top:8px;line-height:1.05}
+.case__d{margin-top:10px;font-size:15px;line-height:1.5;color:var(--on-light)}
+.probs{display:grid;gap:10px;margin-top:22px}
+.prob{text-align:left;width:100%;background:rgba(251,245,229,.07);border:2px solid transparent;border-radius:20px;padding:18px 20px;color:var(--canvas);font-size:16px;font-weight:600;line-height:1.35;cursor:pointer;min-height:56px;transition:border-color var(--t),background var(--t),transform var(--t)}
+.prob:active{transform:scale(.995)}
+.prob.is-active{border-color:var(--ember);background:rgba(255,136,48,.14)}
+.cta{display:grid;gap:12px;margin-top:26px}
+.mini{display:grid;gap:14px;margin-top:22px}
+.mini input,.mini textarea{width:100%;background:rgba(251,245,229,.08);border:2px solid rgba(208,212,197,.25);border-radius:16px;padding:15px 18px;font:inherit;font-size:16px;color:var(--canvas);min-height:56px;transition:border-color var(--t),box-shadow var(--t)}
+.mini textarea{min-height:110px;resize:vertical;line-height:1.5}
+.mini input:focus,.mini textarea:focus{outline:none;border-color:var(--ember);box-shadow:0 0 0 4px rgba(255,136,48,.18)}
+.mini label{font-size:14px;color:var(--calm);font-family:'JetBrains Mono',monospace}
+.mini .field{display:grid;gap:8px}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--mist)}
+.consent input{width:24px;height:24px;min-height:24px;accent-color:var(--ember);flex:none;margin-top:1px}
+.note{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--calm);line-height:1.5;margin-top:12px}
+.msg{display:none;border-radius:18px;padding:20px;font-size:15px;line-height:1.5;margin-top:14px}
+.msg--ok{background:rgba(18,181,165,.14);border:1px solid rgba(18,181,165,.5)}
+.msg--fail{background:rgba(255,45,111,.12);border:1px solid rgba(255,45,111,.45);display:none;gap:14px}
+.foot{padding:34px 0 40px;border-top:1px solid rgba(208,212,197,.16);text-align:center}
+.foot .mono{font-size:12px;color:var(--stone);margin-top:16px;display:block}
+.rv{opacity:0;transform:translateY(18px);transition:opacity 460ms cubic-bezier(.22,.61,.36,1),transform 460ms cubic-bezier(.22,.61,.36,1)}
+.rv.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .rv{opacity:1;transform:none}.draw{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <a class="logo" href="index.html" data-ev="hello_to_main">
+    <svg viewBox="0 0 120 120" aria-hidden="true">
+      <rect width="120" height="120" rx="28" fill="rgba(251,245,229,.08)"></rect>
+      <polyline points="28,84 48,84 60,54 82,54" fill="none" stroke="#FF8830" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></polyline>
+      <circle cx="28" cy="84" r="9" fill="#FF8830"></circle>
+      <circle cx="90" cy="54" r="12" fill="none" stroke="#FF8830" stroke-width="8"></circle>
+    </svg>
+    <span class="logo__name">MeWeGo <b>Growth</b></span>
+  </a>
+</div>
+
+<header class="hero">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow">знакомство · 90 секунд</span>
+    <h1>Мы, скорее всего, только что познакомились</h1>
+    <p>Поэтому не буду рассказывать о компании двадцать минут. За 90 секунд покажу, чем мы можем быть полезны бизнесу.</p>
+    <svg class="route" viewBox="0 0 600 70" fill="none" preserveAspectRatio="none" aria-hidden="true">
+      <polyline class="draw" points="10,56 160,56 250,20 400,20 470,56 590,56" stroke="#FF8830" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+      <circle cx="10" cy="56" r="7" fill="#FF8830"></circle>
+      <circle cx="250" cy="20" r="5" fill="#FBF5E5"></circle>
+      <circle cx="590" cy="56" r="9" fill="none" stroke="#FF8830" stroke-width="4"></circle>
+    </svg>
+
+    <div class="nums">
+      <div class="num"><p class="num__n"><span data-count="1">0</span> → <span class="u" data-count="108">0</span> млн ₽</p><p class="num__t">оборот проекта в недвижимости за период управления</p></div>
+      <div class="num"><p class="num__n"><span data-count="3">0</span> → <span class="u" data-count="37">0</span></p><p class="num__t">человек в команде</p></div>
+      <div class="num"><p class="num__n" data-count="8" data-suffix=" точек">0</p><p class="num__t">сеть услуг офлайн</p></div>
+      <div class="num"><p class="num__n" data-count="6" data-suffix=" млн ₽">0</p><p class="num__t">офлайн-продукт, 60 участников</p></div>
+    </div>
+  </div>
+</header>
+
+<section class="sec sec--light">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--trail)">четыре кейса из разных ниш</span>
+    <h2>Мы уже находили деньги в очень разных местах</h2>
+    <p style="margin-top:14px;font-size:15px;color:var(--stone);line-height:1.5">Это проекты Натальи Мелиховой и команд, которыми она управляла до создания MeWeGo Growth.</p>
+    <div class="cases">
+      <article class="case rv">
+        <span class="case__k">недвижимость и инвестиции</span>
+        <p class="case__n">1 → 108 млн ₽</p>
+        <p class="case__d">Пересобрали продуктовую линейку, CRM, базу, партнёрства, воронки и трёхуровневую систему продаж. Оборот вырос до 15–19 млн ₽ в месяц, команда — с 3 до 37 человек.</p>
+      </article>
+      <article class="case rv">
+        <span class="case__k">сеть из 8 массажных салонов</span>
+        <p class="case__n">Деньги были в базе, а не в рекламе</p>
+        <p class="case__d">Вместо очередной рекламной кампании — сегментация, повторные визиты, работа администраторов, возвраты, отзывы и клиентский путь после первого посещения.</p>
+      </article>
+      <article class="case rv">
+        <span class="case__k">B2B / производство</span>
+        <p class="case__n">Чек 450 000 ₽ за 6 недель</p>
+        <p class="case__d">Новый продукт без готовой аудитории и истории продаж: упаковка ценности, контент, диагностики и процесс продаж. Четыре первые продажи за шесть недель.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="eyebrow">один вопрос</span>
+    <h2>Что сейчас больше всего похоже на ваш бизнес?</h2>
+    <div class="probs" id="probs">
+      <button class="prob" type="button" data-prob="Продажи падают, хотя заявок меньше не стало">Продажи падают, хотя заявок меньше не стало</button>
+      <button class="prob" type="button" data-prob="Расходы растут быстрее выручки">Расходы растут быстрее выручки</button>
+      <button class="prob" type="button" data-prob="База большая, а денег из неё почти нет">База большая, а денег из неё почти нет</button>
+      <button class="prob" type="button" data-prob="Контент выходит постоянно, но непонятно зачем">Контент выходит постоянно, но непонятно зачем</button>
+      <button class="prob" type="button" data-prob="Команда очень занята, но непонятно, кто отвечает за деньги">Команда занята, но непонятно, кто отвечает за деньги</button>
+      <button class="prob" type="button" data-prob="Без собственника всё тормозит">Без собственника всё тормозит</button>
+    </div>
+
+    <div class="cta">
+      <a class="btn btn--ghost" href="index.html#xray" data-ev="business_xray_start"><span>Пройти Business X-Ray за 2 минуты</span></a>
+    </div>
+
+    <div style="margin-top:34px">
+      <span class="eyebrow">или сразу напишите</span>
+      <h2>Рассказать, что происходит</h2>
+      <form class="mini" id="miniForm" novalidate>
+        <div class="field">
+          <label for="h-what">Что происходит в бизнесе</label>
+          <textarea id="h-what" name="what" placeholder="Двух предложений достаточно"></textarea>
+        </div>
+        <div class="field">
+          <label for="h-name">Имя и компания</label>
+          <input id="h-name" name="name" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="h-contact">Telegram или телефон</label>
+          <input id="h-contact" name="contact" autocomplete="tel">
+        </div>
+        <label class="consent"><input type="checkbox" id="h-consent"><span>Согласен на обработку персональных данных.</span></label>
+        <button class="btn btn--primary" type="submit"><span>Рассказать, что происходит</span></button>
+        <p class="note" id="hNote">30 минут. Без презентации и обязательства покупать сопровождение. Если задача не наша — скажем прямо.</p>
+        <div class="msg msg--ok" id="hOk" role="status">Спасибо. Сначала посмотрим на задачу, а не на календарь. Если видим, что можем быть полезны, свяжемся и назначим разговор. Если задача не наша — тоже скажем прямо.</div>
+        <div class="msg msg--fail" id="hFail" role="alert">
+          <p id="hFailText">Заявка не отправлена: форма пока не подключена к серверу. Нажмите кнопку — текст скопируется, и откроется чат с Натальей.</p>
+          <button class="btn btn--primary" type="button" id="hTg" data-ev="telegram_click"><span>Скопировать и открыть Telegram</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <a class="btn btn--ghost" href="index.html" data-ev="hello_to_main"><span>Посмотреть MeWeGo Growth целиком</span></a>
+    <span class="mono">MeWeGo Growth · Москва · 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var CONFIG = { FORM_ENDPOINT:'', TELEGRAM:'https://t.me/melikhova_natalya' };
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var state = { problem:'' };
+
+function track(name, data){
+  data = data || {};
+  try{
+    if (typeof window.ym === 'function' && window.__ymId) window.ym(window.__ymId,'reachGoal',name,data);
+    if (typeof window.gtag === 'function') window.gtag('event', name, data);
+    (window.dataLayer = window.dataLayer || []).push(Object.assign({event:name}, data));
+  }catch(e){}
+}
+document.addEventListener('click', function(e){
+  var el = e.target.closest('[data-ev]');
+  if (el) track(el.getAttribute('data-ev'));
+});
+
+/* появление */
+if ('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(en){
+    en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('is-in'); io.unobserve(x.target); } });
+  }, {rootMargin:'0px 0px -10% 0px', threshold:.08});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('is-in'); });
+}
+
+/* счётчики */
+function animateCount(el){
+  var target = parseFloat(el.getAttribute('data-count')), suffix = el.getAttribute('data-suffix') || '';
+  if (reduced || isNaN(target)){ el.textContent = target + suffix; return; }
+  var dur = 1000, start = performance.now();
+  requestAnimationFrame(function tick(now){
+    var p = Math.min((now-start)/dur,1), e = 1 - Math.pow(1-p,3);
+    el.textContent = Math.round(target*e) + suffix;
+    if (p < 1) requestAnimationFrame(tick);
+  });
+}
+if ('IntersectionObserver' in window){
+  var cio = new IntersectionObserver(function(en){
+    en.forEach(function(x){ if (x.isIntersecting){ animateCount(x.target); cio.unobserve(x.target); } });
+  }, {threshold:.4});
+  document.querySelectorAll('[data-count]').forEach(function(el){ cio.observe(el); });
+} else {
+  document.querySelectorAll('[data-count]').forEach(animateCount);
+}
+
+/* выбор ситуации */
+document.querySelectorAll('.prob').forEach(function(btn){
+  btn.setAttribute('aria-pressed','false');
+  btn.addEventListener('click', function(){
+    var was = btn.classList.contains('is-active');
+    document.querySelectorAll('.prob').forEach(function(b){ b.classList.remove('is-active'); b.setAttribute('aria-pressed','false'); });
+    if (was){ state.problem = ''; return; }
+    btn.classList.add('is-active'); btn.setAttribute('aria-pressed','true');
+    state.problem = btn.getAttribute('data-prob');
+    track('problem_selected', {problem: state.problem});
+  });
+});
+
+/* копирование + Telegram */
+function copyText(text){
+  try{
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+    document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+  }catch(e){}
+  return Promise.resolve();
+}
+function sendViaTelegram(text, hint){
+  copyText(text).then(function(){
+    if (hint) hint.textContent = 'Текст скопирован. Открываем чат — остаётся вставить его в сообщение.';
+    window.open(CONFIG.TELEGRAM,'_blank','noopener');
+    track('telegram_click');
+  });
+}
+
+/* форма */
+var form = document.getElementById('miniForm'), started = false;
+form.addEventListener('input', function(){ if (!started){ started = true; track('form_start'); } });
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  var what = document.getElementById('h-what').value.trim(),
+      name = document.getElementById('h-name').value.trim(),
+      contact = document.getElementById('h-contact').value.trim(),
+      consent = document.getElementById('h-consent').checked,
+      note = document.getElementById('hNote'),
+      ok = document.getElementById('hOk'), fail = document.getElementById('hFail');
+
+  if (what.length < 10 || name.length < 2 || contact.length < 3 || !consent){
+    note.textContent = 'Заполните, что происходит, имя и контакт — и отметьте согласие на обработку данных.';
+    return;
+  }
+  var text = ['Заявка со страницы знакомства MeWeGo Growth','', 'Что происходит: ' + what, 'Имя и компания: ' + name, 'Контакт: ' + contact,
+              state.problem ? 'Выбранная ситуация: ' + state.problem : ''].filter(Boolean).join('\n');
+
+  ok.style.display = 'none'; fail.style.display = 'none';
+  if (!CONFIG.FORM_ENDPOINT){
+    fail.style.display = 'grid';
+    document.getElementById('hTg').onclick = function(){ sendViaTelegram(text, note); };
+    return;
+  }
+  note.textContent = 'Отправляем…';
+  fetch(CONFIG.FORM_ENDPOINT, {method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({what:what, name:name, contact:contact, problem:state.problem, summary:text, page:location.href})})
+   .then(function(r){ if (!r.ok) throw 0;
+      form.querySelectorAll('input, textarea').forEach(function(el){ if (el.type!=='checkbox') el.value=''; });
+      ok.style.display='block'; note.textContent=''; track('form_submit_success');
+   })
+   .catch(function(){
+      fail.style.display='grid'; note.textContent='';
+      document.getElementById('hFailText').textContent = 'Заявка не ушла — сервер не ответил. Нажмите кнопку: текст скопируется, и откроется чат с Натальей.';
+      document.getElementById('hTg').onclick = function(){ sendViaTelegram(text, note); };
+   });
+});
+})();
+</script>
+</body>
+</html>
