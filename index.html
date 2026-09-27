@@ -21,7 +21,7 @@
 <link rel="preload" href="fonts/montserrat-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='26' fill='%23171E22'/%3E%3Cpolyline points='30,80 50,80 60,55 80,55' fill='none' stroke='%23FF8830' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='30' cy='80' r='9' fill='%23FF8830'/%3E%3Ccircle cx='86' cy='55' r='11' fill='none' stroke='%23FF8830' stroke-width='8'/%3E%3C/svg%3E">
+<link rel="icon" href="logo.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -132,8 +132,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .hdr__bar{max-width:1640px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 24px;transition:padding var(--t)}
 .hdr.is-shrunk .hdr__bar{padding:10px 0}
 .logo{display:flex;align-items:center;gap:14px;min-width:0;flex:none}
-.logo__mark{width:38px;height:38px;flex:none}
-.logo__mark polyline,.logo__mark circle{transition:stroke var(--t)}
+.logo__mark{width:38px;height:38px;flex:none;object-fit:contain}
 .logo__text{display:flex;flex-direction:column;line-height:1;min-width:0}
 .logo__name{font-weight:800;font-size:21px;letter-spacing:-.02em;color:var(--canvas);white-space:nowrap}
 .logo__name b{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -670,8 +669,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .field input,.field select,.field textarea{transition:border-color var(--t),box-shadow var(--t),transform var(--t)}
 .field input:focus,.field select:focus,.field textarea:focus{transform:translateY(-1px)}
 
-/* логотип: маршрут в знаке подмигивает */
-.logo:hover .logo__mark polyline{stroke:var(--momentum)}
+/* логотип: подмигивает при наведении */
 .logo__mark{transition:transform var(--t)}
 .logo:hover .logo__mark{transform:translateY(-2px) rotate(-3deg)}
 
@@ -768,12 +766,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 <header class="hdr" id="hdr">
   <div class="hdr__bar">
     <a class="logo" href="#top" aria-label="MeWeGo Growth — на главную">
-      <svg class="logo__mark" viewBox="0 0 120 120" aria-hidden="true">
-        <rect width="120" height="120" rx="28" fill="rgba(251,245,229,.08)"></rect>
-        <polyline points="28,84 48,84 60,54 82,54" fill="none" stroke="#FF8830" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"></polyline>
-        <circle cx="28" cy="84" r="9" fill="#FF8830"></circle>
-        <circle cx="90" cy="54" r="12" fill="none" stroke="#FF8830" stroke-width="8"></circle>
-      </svg>
+      <img class="logo__mark" src="logo.png" alt="MeWeGo Growth logo" width="38" height="38">
       <span class="logo__text">
         <span class="logo__name">MeWeGo <b>Growth</b></span>
         </span>
